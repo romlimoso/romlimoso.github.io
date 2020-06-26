@@ -2,20 +2,110 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Adding an event listener</title>
+        <title></title>
+
+<!-- Title Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200&display=swap" rel="stylesheet">
+
+<!-- mapbox API -->
+        <script src='https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.js'></script>
+        <link href='https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.css' rel='stylesheet' />
+
+<!-- W3.CSS -->
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
         <style>
+
+            body {
+              background-image: linear-gradient(to right, #0d98ba, #0dbaba);
+              /*background-color: #999;*/
+              margin: 50px;
+            }
+
+            h1 {
+              font-family: 'Work Sans', sans-serif;
+              font-size: 48px;
+              color: white;
+              padding: 0px 20px;
+              text-align: center;
+            }
+
+             .column {
+               flex: 50%;
+               max-width: 50%;
+               padding: 0px 20px;
+               /*border-radius: 3px;
+               font-size: 2em;
+               font-family: sans-serif;
+               font-weight: bold;
+               background-color: black;*/
+             }
+             .column img {
+               margin-top: 20px;
+               vertical-align: middle;
+               width: 100%
+             }
+
+             @media screen and (max-width: 760px) {
+                .column {
+                    flex: 100%;
+                    max-width: 100%;
+                  }
+             }
+
+             .media-container {
+               display: flex;
+               flex-wrap: wrap;
+               padding: 0 0px;
+               /*display: grid;
+               grid-gap: 1rem;
+               grid-template-columns:  repeat(2, 720px);
+               grid-template-rows: repeat(autofill, 480px);*/
+             }
+
+             img {
+                 -webkit-filter: brightness(100%);
+                 border-radius: 10px;
+             }
+
+             img:hover {
+                 -webkit-filter: brightness(30%);
+                 -webkit-transition: all 1s ease;
+                 -moz-transition: all 1s ease;
+                 -o-transition: all 1s ease;
+                 -ms-transition: all 1s ease;
+                 transition: all 1s ease;
+             }
+
         </style>
+
+<!--responsive web design-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     </head>
     <body>
 
-    <h1>testcenter romli</h1>
+        <h1>data landscapes</h1>
 
-    <button id="clicker">Boring button</button>
+      <!--<p id = "test">test</p>-->
 
+      <div class = 'media-container'>
+
+      <!--*<a href = "qgis-europe/qgis-europe.html">
+        View Full Screen</br></a>-->
+        <div class = 'column col-1'>
+          <img id = "qgis-europe" src = "qgis-europe/qgis-europe-900-r15.png" alt= "image1">
+        </div>
+        <div class= 'column col-2'>
+          <img id = "mp-eastcoast"  src = "mp-eastcoast/mp-eastcoast-480-r15.gif" alt = "image2">
+      </div>
+
+    <!--<iframe id = "mb-map"
+    src='https://api.mapbox.com/styles/v1/nextbear/ckbca7n990usw1ijvpn9wg5bu/draft.html?fresh=true&title=false&access_token=pk.eyJ1IjoibmV4dGJlYXIiLCJhIjoiY2tiYjU0cG53MDE0MTJ0cDZ5YWZ6b3VjMyJ9.dM0Z5qE7XODCnyLnD0Qs7w'/>
+    -->
     <script>
-    // 1. Find and store the element we want to listen to events on.
-    // 2. Define the function that will respond to the event.
-    // 3. Add the event listener for the element and function
+
     </script>
+
     </body>
 </html>
