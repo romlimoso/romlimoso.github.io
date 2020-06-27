@@ -19,7 +19,7 @@
         <style>
 
             body {
-              background-image: linear-gradient(to right, #0d98ba, #0dbaba);
+              background-image: linear-gradient(to right, #8d98ba, #0dbaba);
               /*background-color: #999;*/
               margin: 50px;
             }
@@ -48,6 +48,8 @@
                width: 100%
              }
 
+
+
              @media screen and (max-width: 760px) {
                 .column {
                     flex: 100%;
@@ -57,28 +59,61 @@
              }
 
              .media-container {
-               display: flex;
-               flex-wrap: wrap;
-               padding: 0 0px;
-               /*display: grid;
-               grid-gap: 1rem;
-               grid-template-columns:  repeat(2, 720px);
-               grid-template-rows: repeat(autofill, 480px);*/
+                display: flex;
+                flex-wrap: wrap;
+                padding: 0 0px;
+                /*display: grid;
+                grid-gap: 1rem;
+                grid-template-columns:  repeat(2, 720px);
+                grid-template-rows: repeat(autofill, 480px);*/
              }
 
              img {
                  -webkit-filter: brightness(100%);
                  border-radius: 10px;
              }
-
-             img:active {
+/*
+             img:hover {
                  -webkit-filter: brightness(30%);
-                 -webkit-transition: all 1s ease;
-                 -moz-transition: all 1s ease;
-                 -o-transition: all 1s ease;
-                 -ms-transition: all 1s ease;
-                 transition: all 1s ease;
+                 -webkit-transition: all 0.8s ease;
+                 -moz-transition: all 0.8s ease;
+                 -o-transition: all 0.8s ease;
+                 -ms-transition: all 0.8s ease;
+                 transition: all 0.8s ease;
              }
+*/
+             .overlay {
+                  border-radius: 10px;
+
+                  top: 0;
+                  bottom: -1px ;
+                  left: 0;
+                  right: 0;
+                  height: 95.05%;
+                  width: 100%;
+                  opacity: 0;
+                  transition: .5s ease;
+                  background-color: #000000;
+                  -webkit-transform: translate(0%, -100%);
+                  -ms-transform: translate(0%, -100%);
+                  transform: translate(0%, -99.75%);
+                  text-align: center;
+             }
+             .column:hover .overlay{
+                  opacity: 0.5;
+             }
+
+             .text {
+                  color: white;
+                  font-size: 20px;
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  -webkit-transform: translate(-50%, -50%);
+                  -ms-transform: translate(-50%, -50%);
+                  transform: translate(-50%, -50%);
+                  text-align: center;
+              }
 
         </style>
 
@@ -97,7 +132,16 @@
       <!--*<a href = "qgis-europe/qgis-europe.html">
         View Full Screen</br></a>-->
         <div class = 'column col-1'>
-          <img id = "qgis-europe" src = "/qgis-europe/qgis-europe-900-r15.png" alt= "image1">
+          <a href = "qgis-europe/qgis-europe.html">
+            <img id = "qgis-europe" src = "qgis-europe/qgis-europe-900-r15.png" alt= "image1">
+
+
+          <div class = "overlay">
+            <div class = "text">
+              Hello World
+            </div>
+          </div>
+        </a>
         </div>
         <div class= 'column col-2'>
           <img id = "mp-eastcoast"  src = "mp-eastcoast/mp-eastcoast-480-r15.gif" alt = "image2">
