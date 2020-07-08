@@ -12,7 +12,7 @@ Q3D.gui = {
     },
     cmd: {         // commands for touch screen devices
       rot: false,  // auto rotation
-      wf: false    // wireframe mode
+      wf: true    // wireframe mode
     },
     i: Q3D.application.showInfo
   },
