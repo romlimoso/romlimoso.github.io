@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+
+<!-- Primary Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200&display=swap" rel="stylesheet">
+
+<!-- mapbox API -->
+        <!--
+        <script src='https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.js'></script>
+        <link href='https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.css' rel='stylesheet' />
+      -->
+
+<!-- W3.CSS -->
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+        <style>
+
+            body {
+              background-image: linear-gradient(to right, #0088c9, #0ca0a9);
+              /*background-color: #999;*/
+              margin: 50px;
+            }
+
+            h1 {
+              font-family: 'Work Sans', sans-serif;
+              font-size: 48px;
+              color: white;
+              padding: 0px 20px;
+              text-align: center;
+            }
+
+            .column {
+               position: relative;
+               margin: 2%;
+               padding: 0%;
+               flex: 50%;
+               max-width: 46%;
+            }
+
+            .column img {
+               vertical-align: middle;
+               width: 100%
+            }
+
+            @media screen and (max-width: 760px) {
+                .column {
+                    flex: 100%;
+                    max-width: 100%;
+                  }
+             }
+
+            .media-container {
+                display: flex;
+                flex-wrap: wrap;
+                padding: 20px 20px 20px 20px;
+                max-height: 50%;
+            }
+
+            img {
+                  border-radius: 5px;
+            }
+
+            .overlay {
+
+
+              height: 50%;
+                  position: absolute;
+                  /*border: 1px solid #fff;*/
+                  border-radius: 5px;
+                  height: 100%;
+                  width: 100%;
+                  opacity: 0;
+                  -webkit-transition: all 0.8s ease;
+                  -moz-transition: all 0.8s ease;
+                  -o-transition: all 0.8s ease;
+                  -ms-transition: all 0.8s ease;
+                  transition: 0.8s ease;
+                  background-color: transparent;
+                  -webkit-transform: translate(0%, -100%);
+                  -ms-transform: translate(0%, -100%);
+                  transform: translate(0%, -100%);
+             }
+
+             .column:hover .overlay {
+                  opacity: 1;
+
+             }
+
+             .image:hover {
+               /*-webkit-filter: brightness(60%);*/
+               -webkit-transition: all 0.8s ease;
+               -moz-transition: all 0.8s ease;
+               -o-transition: all 0.8s ease;
+               -ms-transition: all 0.8s ease;
+               transition: all 0.8s ease;
+             }
+
+             /*.text {
+                  color: white;
+                  font-size: 20px;
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  -webkit-transform: translate(-50%, -50%);
+                  -ms-transform: translate(-50%, -50%);
+                  transform: translate(-50%, -50%);
+                  text-align: center;
+             }*/
+
+        </style>
+
+<!--responsive web design-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    </head>
+    <body
+
+    <div id="container" class="container">
+      <div id="output" class="container">
+
+        <h1>DATA LANDSCAPES</h1>
+
+      <!--<p id = "test">test</p>-->
+
+      <div class = 'media-container'>
+
+        <div class = 'column col-1'>
+          <a href = "dark-europe/mag-europe-dark.html">
+            <img class = "image" id = "qgis-europe-dark" src = "dark-europe/europe_lightgrey.png" alt= "image1">
+          </a>
+        </div>
+
+        <div class= 'column col-2'>
+          <img class = "image" id = "mp-eastcoast"  src = "mp-eastcoast/mp-eastcoast-1000-r15.png" alt = "image2">
+          <div class = "overlay">
+            <img id = "mp-eastcoast-gif"  src = "mp-eastcoast/mp-eastcoast-480-r15.gif" alt = "gif2">
+          </div>
+        </div>
+
+
+        <div class = 'column col-3'>
+          <a href = "explore-europe/mag-europe-explorer.html">
+            <img class = "image" id = "qgis-europe-dark" src = "explore-europe/explore-europe.png" alt= "image3">
+          </a>
+        </div>
+
+        <div class = 'column col-4'>
+          <a href = "china-india/china-india.html">
+            <img class = "image" id = "qgis-europe-dark" src = "china-india/china-india.png" alt= "image4">
+          </a>
+        </div>
+
+        <div class = 'column col-5'>
+          <a href = "british-channel/brit-channel.html">
+            <img class = "image" id = "qgis-europe-dark" src = "british-channel/british-channel.png" alt= "image5">
+          </a>
+        </div>
+
+        <div class = 'column col-6'>
+          <a href = "japan-korea/japan-korea.html">
+            <img class = "image" id = "qgis-europe-dark" src = "japan-korea/japan-korea.png" alt= "image3">
+          </a>
+        </div>
+
+
+        </div>
+      </div>
+    <div id="controls" class="controls">
+    </div>
+    <!--<iframe id = "mb-map"
+    src='https://api.mapbox.com/styles/v1/nextbear/ckbca7n990usw1ijvpn9wg5bu/draft.html?fresh=true&title=false&access_token=pk.eyJ1IjoibmV4dGJlYXIiLCJhIjoiY2tiYjU0cG53MDE0MTJ0cDZ5YWZ6b3VjMyJ9.dM0Z5qE7XODCnyLnD0Qs7w'/>
+    -->
+    <script>
+
+    </script>
+
+    </body>
+</html>
